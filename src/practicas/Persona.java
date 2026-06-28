@@ -15,13 +15,13 @@ public class Persona {
     private int cedula;
     private int telefono;
     
-    // Lista estática de 3 libros asignados a esta persona
+
     public Libro[] listaLibros = new Libro[3]; 
 
     public Persona() {
     }
 
-    // Métodos Setters y Getters
+
     public void setNombres(String nombre) { this.nombre = nombre; }
     public void setApellido(String apellido) { this.apellido = apellido; }
     public void setCorreoElectronico(String correoElectronico) { this.correoElectronico = correoElectronico; }
@@ -29,7 +29,6 @@ public class Persona {
     public int getCedula() { return this.cedula; }
     public void setTelefono(int telefono) { this.telefono = telefono; }
 
-    // Método imprimir corregido con tus variables reales
     public void imprimir() {
         System.out.println("--- DATOS DE LA PERSONA ---");
         System.out.println("Nombre: " + nombre);
@@ -42,7 +41,6 @@ public class Persona {
             if (listaLibros[i] != null) {
                 System.out.println(" - Libro " + (i+1) + ": " + listaLibros[i].titulo + " (Autor: " + listaLibros[i].autor + ")");
             }
-        }
-        System.out.println("---------------------------------------");
+    }
     }
 }
